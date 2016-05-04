@@ -331,7 +331,16 @@
         $parameters = array('action', 'pid');
       }
     }
+    
+    if ( isset( $_GET['action'] ) ){ 
+        require(DIR_WS_CLASSES . 'application_top_processing.php');
+        $applicationTopProcessing = new applicationTopProcessing;
+        
+        $applicationTopProcessing->process();
+    }
+    
     switch ($HTTP_GET_VARS['action']) {
+      /**
       // customer wants to update the product quantity in their shopping cart
       case 'update_product' : $n=sizeof($HTTP_POST_VARS['products_id']);
                               for ($i=0; $i<$n; $i++) {
@@ -345,6 +354,8 @@
                               }
                               tep_redirect(tep_href_link($goto, tep_get_all_get_params($parameters)));
                               break;
+      */
+      /**
       // customer adds a product from the products page
       case 'add_product' :    if (isset($HTTP_POST_VARS['products_id']) && is_numeric($HTTP_POST_VARS['products_id'])) {
                                 $attributes = isset($HTTP_POST_VARS['id']) ? $HTTP_POST_VARS['id'] : '';
@@ -353,6 +364,7 @@
                               $messageStack->add_session('product_action', sprintf(PRODUCT_ADDED, tep_get_products_name((int)$HTTP_POST_VARS['products_id'])), 'success');
                               tep_redirect(tep_href_link($goto, tep_get_all_get_params($parameters)));
                               break;
+      */
       // customer removes a product from their shopping cart
       case 'remove_product' : if (isset($HTTP_GET_VARS['products_id'])) {
                                 $cart->remove($HTTP_GET_VARS['products_id']);
