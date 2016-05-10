@@ -9,6 +9,9 @@
 
   Released under the GNU General Public License
 */
+
+//header tags
+$oscTemplate->buildBlocks();
 ?>
 <!DOCTYPE html>
 <html <?php echo HTML_PARAMS; ?>>
@@ -37,6 +40,10 @@ $.datepicker.setDefaults($.datepicker.regional['<?php echo JQUERY_DATEPICKER_I18
 <script type="text/javascript" src="<?php echo tep_catalog_href_link('ext/flot/jquery.flot.time.min.js', '', 'SSL'); ?>"></script>
 <link rel="stylesheet" type="text/css" href="includes/stylesheet.css">
 <script type="text/javascript" src="includes/general.js"></script>
+<?php 
+//header tags
+echo $oscTemplate->getBlocks('header_tags'); 
+?>
 </head>
 <body>
 

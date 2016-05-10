@@ -15,6 +15,11 @@
 
 <?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
 
+<?php 
+//header tags
+echo $oscTemplate->getBlocks('footer_scripts'); 
+?>
+
 <br />
 
 </body>
