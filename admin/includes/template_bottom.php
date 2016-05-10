@@ -17,7 +17,7 @@
 
 <?php 
 //header tags
-echo $oscTemplate->getBlocks('footer_scripts'); 
+echo $oscTemplate->getBlocks('admin_footer_scripts'); 
 ?>
 
 <br />

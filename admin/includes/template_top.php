@@ -42,7 +42,7 @@ $.datepicker.setDefaults($.datepicker.regional['<?php echo JQUERY_DATEPICKER_I18
 <script type="text/javascript" src="includes/general.js"></script>
 <?php 
 //header tags
-echo $oscTemplate->getBlocks('header_tags'); 
+echo $oscTemplate->getBlocks('admin_header_tags'); 
 ?>
 </head>
 <body>
