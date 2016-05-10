@@ -237,4 +237,8 @@
                         array('title' => TEXT_CACHE_MANUFACTURERS, 'code' => 'manufacturers', 'file' => 'manufacturers_box-language.cache', 'multiple' => true),
                         array('title' => TEXT_CACHE_ALSO_PURCHASED, 'code' => 'also_purchased', 'file' => 'also_purchased-language.cache', 'multiple' => true)
                        );
+
+//header tags
+require(DIR_FS_CATALOG . 'includes/classes/osc_template.php');
+$oscTemplate = new oscTemplate();
 ?>

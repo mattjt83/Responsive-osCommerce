@@ -9,6 +9,9 @@
 
   Released under the GNU General Public License
 */
+
+//header tags
+$oscTemplate->buildBlocks();
 ?>
 <!DOCTYPE html>
 <html <?php echo HTML_PARAMS; ?>>

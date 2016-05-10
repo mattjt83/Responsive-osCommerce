@@ -137,9 +137,10 @@
   $installed_modules = array();
   for ($i=0, $n=sizeof($directory_array); $i<$n; $i++) {
     $file = $directory_array[$i];
-
-    include($module_language_directory . $language . '/modules/' . $module_type . '/' . $file);
-    include($module_directory . $file);
+    
+    //header tags
+    include_once($module_language_directory . $language . '/modules/' . $module_type . '/' . $file);
+    include_once($module_directory . $file);
 
     $class = substr($file, 0, strrpos($file, '.'));
     if (tep_class_exists($class)) {
