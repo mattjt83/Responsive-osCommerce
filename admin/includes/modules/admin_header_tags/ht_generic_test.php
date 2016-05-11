@@ -12,7 +12,7 @@
 
   class ht_generic_test {
     var $code = 'ht_generic_test';
-    var $group = 'footer_scripts';
+    var $group = 'admin_footer_scripts';
     var $title;
     var $description;
     var $sort_order;
