@@ -53,7 +53,7 @@
     function call($group, $action) {
       $result = '';
 
-      foreach ( $this->_hooks[$this->_site][$group][$action] as $hook ) {
+      foreach ( (array)$this->_hooks[$this->_site][$group][$action] as $hook ) {
         $result .= call_user_func(array($GLOBALS['hook_' . $this->_site . '_' . $group . '_' . $hook], 'listen_' . $action));
       }
 
@@ -62,4 +62,3 @@
       }
     }
   }
-?>
