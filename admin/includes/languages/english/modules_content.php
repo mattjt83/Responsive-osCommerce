@@ -22,4 +22,7 @@ define('TEXT_INFO_ONLINE_STATUS', 'online status');
 define('TEXT_INFO_API_VERSION', 'API Version:');
 
 define('TEXT_MODULE_DIRECTORY', 'Module Directory:');
+define('TEXT_EDIT_LANGUAGE_FILES', 'Edit language files:');
+define('TEXT_EDIT_LANGUAGE_FILE', 'Edit %s language file:');
+define('TEXT_NO_LANGUAGE_FILE', 'Language definition for this module did not exist for %s and has been automatically created. Please add the corresponding file and add the needed language definitions.');
 ?>
